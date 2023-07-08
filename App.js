@@ -57,20 +57,22 @@ export default function App() {
   }
 
   return (
-    <LinearGradient
-      colors={[Colors.eggPlant, Colors.teaGreen]}
-      style={styles.container}
-    >
-      <ImageBackground
-        source={require("./assets/images/bg.jpg")}
-        resizeMode="cover"
-        imageStyle={styles.backgroundImage}
+    <>
+      <StatusBar style="light" />
+      <LinearGradient
+        colors={[Colors.eggPlant, Colors.teaGreen]}
         style={styles.container}
       >
-        <StatusBar style="light" />
-        <SafeAreaView style={styles.container}>{screen}</SafeAreaView>
-      </ImageBackground>
-    </LinearGradient>
+        <ImageBackground
+          source={require("./assets/images/bg.jpg")}
+          resizeMode="cover"
+          imageStyle={styles.backgroundImage}
+          style={styles.container}
+        >
+          <SafeAreaView style={styles.container}>{screen}</SafeAreaView>
+        </ImageBackground>
+      </LinearGradient>
+    </>
   );
 }
 

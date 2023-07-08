@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
     padding: 12,
     borderColor: Colors.tiffanyBlue,
     borderWidth: 2,
+    maxWidthß: "80%",
   },
 });
 export default Title;
